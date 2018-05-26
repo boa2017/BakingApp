@@ -16,7 +16,7 @@ In this project you will:
 + Use Fragments to create a responsive design that works on phones and tablets.
 
 ## App Description
-Your task is to create a Android Baking App that will allow Udacity’s resident baker-in-chief, Miriam, to share her recipes with the world. You will create an app that will allow a user to select a recipe and see video-guided steps for how to complete it.
+Your task is to create a Android Baking App that will allow Udacityâ€™s resident baker-in-chief, Miriam, to share her recipes with the world. You will create an app that will allow a user to select a recipe and see video-guided steps for how to complete it.
  
 ## Libraries
  + Butter Knife
@@ -30,6 +30,12 @@ Your task is to create a Android Baking App that will allow Udacity’s resident b
 ## Icon credits
  + Receta by Freepik
  + ic_launcher by Freepik
+ 
+## Screenshots
+ + ![Screenshot](screenshot-2018-05-26_10.40.07.129.png)
+ + ![Screenshot](screenshot-2018-05-26_10.40.37.680.png)
+ + ![Screenshot](screenshot-2018-05-26_10.40.59.93.png)
+
 
 ## Resources and inspiration
  The core information to build this app has been found in the Android Developer Nanodegree from Udacity but many resources have been consulted to better understand concepts and code.
