@@ -36,6 +36,7 @@ Your task is to create a Android Baking App that will allow Udacity’s resident
 <img src="https://github.com/boa2017/BakingApp/blob/master/Screenshots/screenshot-2018-05-26_10.40.37.680.png" height="400" alt="Screenshot"/>  
 <img src="https://github.com/boa2017/BakingApp/blob/master/Screenshots/screenshot-2018-05-26_10.40.59.93.png" height="400" alt="Screenshot"/>
 
+
 ## Resources and inspiration
  The core information to build this app has been found in the Android Developer Nanodegree from Udacity but many resources have been consulted to better understand concepts and code.
  Some of the main resources are the following:
