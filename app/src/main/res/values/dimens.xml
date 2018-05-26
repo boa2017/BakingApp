@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NetworkUtils -->
+    <dimen name="cards_gutter_half">4dp</dimen>
+
+    <!-- Recipe Steps Details -->
+    <dimen name="recipe_step_image_height">150dp</dimen>
+
+    <!--Widget-->
+    <dimen name="widget_height">250dp</dimen>
+    <dimen name="widget_width">180dp</dimen>
+    <dimen name="widget_resize_width">220dp</dimen>
+    <dimen name="widget_resize_height">300dp</dimen>
+    <dimen name="widget_padding">4dp</dimen>
+
+    <!--Margin Sizes-->
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">22dp</dimen>
+
+    <!--Text Sizes-->
+    <dimen name="small_font">12sp</dimen>
+    <dimen name="medium_font">14sp</dimen>
+    <dimen name="large_font">18sp</dimen>
+    <dimen name="xl_font">22sp</dimen>
+</resources>

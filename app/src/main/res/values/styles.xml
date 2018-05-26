@@ -1,0 +1,238 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ItemCardView" parent="CardView">
+        <item name="cardElevation">2dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Ingredients list item layout. -->
+    <style name="ingredients_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginStart">1dp</item>
+        <item name="android:paddingBottom">@dimen/margin_medium</item>
+        <item name="android:paddingTop">@dimen/margin_medium</item>
+        <item name="android:paddingEnd">@dimen/margin_large</item>
+        <item name="android:paddingLeft">@dimen/margin_medium</item>
+        <item name="android:paddingRight">@dimen/margin_extra_large</item>
+        <item name="android:paddingStart">@dimen/margin_extra_large</item>
+        <item name="android:text">@string/ingredients</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/large_font</item>
+        <item name="android:fontFamily">@font/calligraffitti</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="recipe_details_ingredients">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:paddingBottom">@dimen/material_baseline_grid_2x</item>
+        <item name="android:paddingTop">@dimen/material_baseline_grid_3x</item>
+        <item name="android:paddingEnd">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:paddingStart">@dimen/material_content_edge_margin_horizontal</item>
+        <item name="android:textSize">@dimen/material_typography_regular_body_1_text_size</item>
+        <item name="android:fontFamily">@font/alegreya_sans</item>
+    </style>
+
+    <!-- No recipes layout. -->
+    <style name="imageView">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">250dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_extra_large</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_extra_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_extra_large</item>
+        <item name="android:contentDescription">@string/no_recipes_available</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="guideline2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="tvNoDataMsg">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginBottom">@dimen/margin_medium</item>
+        <item name="android:textSize">@dimen/xl_font</item>
+        <item name="android:text">@string/no_recipes_available</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Recipe item list layout. -->
+    <style name="recipe_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingStart">@dimen/material_card_title_block_padding_horizontal</item>
+    </style>
+
+    <style name="list_recipe_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/material_card_title_block_large_title_text_size</item>
+        <item name="android:paddingBottom">
+            @dimen/material_card_title_block_large_subtitle_margin_top
+        </item>
+        <item name="android:fontFamily">@font/pacifico</item>
+    </style>
+
+    <style name="list_recipe_servings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/material_typography_dense_body_2_text_size</item>
+        <item name="android:fontFamily">@font/alegreya_sans</item>
+    </style>
+
+    <!-- Recipe step full layout. -->
+    <style name="recipe_step_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/recipe_step_image_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="recipe_step_desc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/material_card_title_block_large_padding_bottom
+        </item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:paddingTop">@dimen/material_card_title_block_large_padding_top</item>
+        <item name="android:paddingEnd">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:paddingStart">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:textSize">@dimen/material_card_supporting_text_text_size</item>
+    </style>
+
+    <!-- Recipe step full land layout. -->
+    <style name="recipe_step_image_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/recipe_step_image_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="recipe_step_desc_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/material_card_title_block_large_padding_bottom
+        </item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:paddingTop">@dimen/material_card_title_block_large_padding_top</item>
+        <item name="android:paddingEnd">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:paddingStart">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:textSize">@dimen/material_card_supporting_text_text_size</item>
+    </style>
+
+    <!-- Recipe step full 600dp-land layout. -->
+    <style name="recipe_step_image_land_3">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="recipe_step_desc_land_3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/material_card_title_block_large_padding_bottom
+        </item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:paddingTop">@dimen/material_card_title_block_large_padding_top</item>
+        <item name="android:paddingEnd">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:paddingStart">@dimen/material_card_title_block_padding_horizontal</item>
+        <item name="android:textSize">@dimen/material_card_supporting_text_text_size</item>
+    </style>
+
+    <!-- Step list item layout. -->
+    <style name="step_order_text">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_large</item>
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_large</item>
+        <item name="android:textSize">@dimen/large_font</item>
+        <item name="android:fontFamily">@font/alegreya_sans</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/step_number_circle</item>
+    </style>
+
+    <style name="list_step_description">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:textSize">@dimen/large_font</item>
+        <item name="android:fontFamily">@font/alegreya_sans_extrabold</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+    </style>
+
+    <style name="list_step_video_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Widget ingredients layout. -->
+    <style name="widget_recipe_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/xl_font</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="widget_recipe_lv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:background">@color/cardview_dark_background</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:divider">@color/colorPrimaryText</item>
+        <item name="android:dividerHeight">1dp</item>
+
+    </style>
+
+    <!-- Widget ingredients item list layout. -->
+    <style name="widget_ingredient_name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/medium_font</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

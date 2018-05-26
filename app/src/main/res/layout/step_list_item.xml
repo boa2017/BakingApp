@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/step_order_text"
+        style="@style/step_order_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00. " />
+
+    <TextView
+        android:id="@+id/list_step_description"
+        style="@style/list_step_description"
+        app:layout_constraintBottom_toBottomOf="@+id/step_order_text"
+        app:layout_constraintEnd_toStartOf="@+id/list_step_video_icon"
+        app:layout_constraintStart_toEndOf="@+id/step_order_text"
+        app:layout_constraintTop_toTopOf="@+id/step_order_text"
+        tools:text="Recipe Introduction" />
+
+    <ImageView
+        android:id="@+id/list_step_video_icon"
+        style="@style/list_step_video_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/step_order_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/step_order_text"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorBackground"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/list_step_description"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
