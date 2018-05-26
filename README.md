@@ -32,9 +32,9 @@ Your task is to create a Android Baking App that will allow Udacity’s resident
  + ic_launcher by Freepik
  
 ## Screenshots
- + ![Screenshot](screenshot-2018-05-26_10.40.07.129.png)
- + ![Screenshot](screenshot-2018-05-26_10.40.37.680.png)
- + ![Screenshot](screenshot-2018-05-26_10.40.59.93.png)
+ + ![Screenshot](https://github.com/boa2017/BakingApp/blob/master/Screenshots/screenshot-2018-05-26_10.40.07.129.png)
+ + ![Screenshot](https://github.com/boa2017/BakingApp/blob/master/Screenshots/screenshot-2018-05-26_10.40.37.680.png)
+ + ![Screenshot](https://github.com/boa2017/BakingApp/blob/master/Screenshots/screenshot-2018-05-26_10.40.59.93.png)
 
 
 ## Resources and inspiration
